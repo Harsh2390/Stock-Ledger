@@ -1,4 +1,54 @@
-# Getting Started with Create React App
+# Stock Ledger
+Stock Ledger is a web application designed to provide retail investors with quick and easy access to essential stock information. In today's digital landscape, searching for basic stock data often results in encountering numerous ads and irrelevant content. Stock Ledger aims to streamline this process by delivering concise and accurate stock data directly to users without the clutter.
+
+## project Description
+The primary goal of Stock Ledger is to offer a user-friendly platform where investors can obtain real-time stock prices, detailed quotes, and company logos with minimal effort. By focusing on essential data, this tool helps investors make informed decisions quickly and efficiently.
+
+## Features
+- Real-Time Price Updates: Get the latest price of any stock instantly.
+- Comprehensive Stock Quotes: Access detailed information about stocks, including open, high, low, close prices, volume, and more.
+- Company Logos: View the official logo of the company for better brand recognition.
+- additional functionality can be added to the webapp which require the paid version of 12 data API
+
+## Setup Instructions
+To set up and run Stock Ledger locally, follow these steps:
+### Clone the Repository:
+- `git clone https://github.com/yourusername/stock-ledger.git`
+- `cd stock-ledger`
+
+### Install Dependencies:
+Make sure you have Node.js installed. Then run:
+- `npm install`
+- `npm install axios`
+
+
+### Set Up Environment Variables:
+Create a .env file in the root directory and add your Twelve Data API key:\
+
+REACT_APP_FINMOD_API_KEY=your_api_key_here
+
+### Run the Application:
+Start the development server with:
+`npm start`
+
+### Access the Web App:
+Open your browser and go to http://localhost:3000 to use Stock Ledger.
+
+
+## API Integration
+Stock Ledger utilizes the Twelve Data API for fetching real-time stock prices, detailed quotes, and company logos. The integration involves:
+- Price Endpoint: Retrieves the current price of a specified stock.
+- Quote Endpoint: Provides detailed information about the stock's trading metrics.
+- Logo Endpoint: Fetches the company's official logo for display.
+These endpoints are called asynchronously using axios to ensure efficient data retrieval and rendering in the React application.
+
+## Credits
+This project was developed with assistance from AI tools in several areas:
+- CSS Styling: The styling and layout improvements of the web app were enhanced using AI-generated suggestions.
+- ReactJS Learning: AI resources were utilized to learn best practices and advanced techniques in ReactJS development.
+By leveraging AI, Stock Ledger delivers a polished user experience while maintaining efficient code practices. Feel free to customize this template further based on your specific project details or preferences.
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -29,42 +79,4 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
